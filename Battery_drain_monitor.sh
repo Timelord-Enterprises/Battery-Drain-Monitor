@@ -8,7 +8,7 @@ echo " "
 
 echo -e "Battery script Running,for results: Open "BatteryPercentage.txt" On the desktop"
 echo " "
-echo -e "Press Control-c to quite the script"
+echo -e "Press Control-c to quit the script"
 echo " "
 
 #Define variables for header

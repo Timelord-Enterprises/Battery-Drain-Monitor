@@ -6,4 +6,4 @@ It creates a .txt file on the desktop and updates with the battery percentage.
 
 # Dependencies
 
-none :)
+laptop running macOS

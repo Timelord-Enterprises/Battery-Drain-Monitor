@@ -14,12 +14,16 @@ echo " "
 #Define variables for header
 User=$(users)
 Date=$(date)
+Open_Dock_Apps=$(osascript -e 'tell application "System Events" to get name of (processes where background only is false)')
+i=$((i + 1))
 
 #create results text file
 touch ~/Desktop/BatteryPercentage.txt
-echo -e "BATTERY DRAIN MONITOR by Timelord Enterprises" >>~/Desktop/BatteryPercentage.txt
+echo -e "BATTERY DRAIN MONITOR by" >>~/Desktop/BatteryPercentage.txt
 #Write current user session logged in
 echo -e "\nCurrent USER signed in: $User" >>~/Desktop/BatteryPercentage.txt
+#write all open apps
+echo -e "\nRunning apps: $Open_Dock_Apps" >>~/Desktop/BatteryPercentage.txt
 #wtite Date to script
 echo -e "Script started on $Date" >>~/Desktop/BatteryPercentage.txt
 
@@ -50,6 +54,7 @@ while true; do
     #Option to have audio feedback
     #say the battery percentage is $BatteryPercentage % at $BatteryDrainDate
     #
-    echo -e "\n$BatteryPercentage% @ $BatteryDrainDate " >>~/Desktop/BatteryPercentage.txt
+    echo -e "\n$i. $BatteryPercentage% @ $BatteryDrainDate " >>~/Desktop/BatteryPercentage.txt
+    ((i = i + 1))
     sleep 3600
 done

@@ -1,5 +1,5 @@
 #!/bin/bash
-#©copyright Jan Vancoppenolle, Timelord Enterprises
+# © copyright Jan Vancoppenolle, Timelord Enterprises
 #A script to write away the battery status / Percentage every hour to a .txt file on the desktop
 #
 #
@@ -19,7 +19,7 @@ i=$((i + 1))
 
 #create results text file
 touch ~/Desktop/BatteryPercentage.txt
-echo -e "BATTERY DRAIN MONITOR by" >>~/Desktop/BatteryPercentage.txt
+echo -e "🔋BATTERY DRAIN MONITOR🔋" >>~/Desktop/BatteryPercentage.txt
 #Write current user session logged in
 echo -e "\nCurrent USER signed in: $User" >>~/Desktop/BatteryPercentage.txt
 #write all open apps

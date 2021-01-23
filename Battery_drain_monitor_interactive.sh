@@ -105,7 +105,8 @@ while true; do
     #Option to have audio feedback
     #say the battery percentage is $BatteryPercentage % at $BatteryDrainDate
     #
-    sleep 10
+    sleep 3600
+   
 
 
 done

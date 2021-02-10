@@ -106,5 +106,7 @@ while true; do
     #say the battery percentage is $BatteryPercentage % at $BatteryDrainDate
     #
     sleep 3600
-   
+    
+
+
 done

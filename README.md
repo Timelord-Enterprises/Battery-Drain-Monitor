@@ -16,4 +16,4 @@ Terminal.app might need access to "System Events" to run certain code.
 Open Terminal.app (located in /Applications/Utilities or Cmd+Shift+U).
 Before running the script you have to run "chmod u+x" or "chmod 777" on the bash script. 
 
-After that you drag the script on the terminal window and the monitioring begins.
+After that you drag the script on the terminal window, hit enter and the monitioring begins.
